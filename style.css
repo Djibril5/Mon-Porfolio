@@ -1,75 +1,93 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
+*{
     margin: 0;
-    padding: 0;
-
 }
-
-nav ul {
-    position: absolute;
+header{
+    background-image: url('photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 40px;
+}
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+}
+nav ul li{
     list-style: none;
-    padding: 0;
-    top: 100px;
-    right: 20px;
-
+    margin-left: 50px;
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: #ffffff;
+nav ul li a{
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+nav ul li a:hover{
+    color: salmon;
+    text-decoration: underline;
+}
+.elon{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px 0;
+}
+.elon blockquote{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, sans-serif;
+    text-align: center;
+    color: salmon;
+}
+.elon .description h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+.elon .description h1 span{
+    color: salmon;
+}
+.elon .description p{
+    font-family: cursive;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.elon .description a{
+    text-decoration: none;
+    margin: 40px;
+    color: salmon;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
     font-weight: bold;
 }
-
-nav ul li a:hover{
-    text-decoration: underline;
-    color: salmon;
+.elon .description a:hover{
+    border: none;
+    color: #fff;
+    background-color: salmon;
 }
-header {
-    text-align: center;
-    padding: 5em 0;
-    background: url('photo.jpg') no-repeat center center/cover;
-    padding: 300px;
-}
-
-header .h1 {
-    position: absolute;
-    left: 100px;
-    top: 400px; 
-}
-header .h1 h1{
+#about{
+    display: flex;
+    background-color: #1e1e1e;text-align: center;
+    justify-content: space-around;
+    padding: 40px 0;
+    align-items: center;
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-header p {
-    font-size: 1em;
-    margin: 0;
-    font-family: cursive;
-    color: salmon;
-}
-
-
-section {
-    padding: 2em;
-    text-align: center;
-}
-
-#about, #portfolio, #contact {
-    background-color: #1e1e1e;
-    margin: 1em 0;
-}
-#about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#about img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
 }
 #about a{
     text-decoration: none;
@@ -82,10 +100,12 @@ section {
     color: white;
     box-shadow: -3px 3px salmon;
 }
-#about img{
-    width: 250px;
-    height: 250px;
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 10px;
+#work, #contact {
+    background-color: #1e1e1e;
+    margin: 10px 0;
+    padding: 40px 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
 }
